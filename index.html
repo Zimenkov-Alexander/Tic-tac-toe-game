@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Game Tic-tac-toe</title>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<h1 class="header__title">Крестики-нолики</h1>
+			<div class="header__wrapper">
+				<div class="score">
+					<h2 class="score__title">счет:</h2>
+					<div class="score__wrapper">
+						<p class="score_player">Игрок 1: <span data-player="1">0</span></p>
+						<p class="score_player">Игрок 2: <span data-player="2">0</span></p>
+					</div>
+				</div>
+				<div class="btns">
+					<button id="reset" class="btn btn-reset">Новая Игра</button>
+					<button id="reset-score" class="btn btn-reset">Сбросить счёт</button>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<div class="container">
+				<div class="game--wrapper">
+					<div class="game--block"></div>
+					<div class="game--block"></div>
+					<div class="game--block"></div>
+					<div class="game--block"></div>
+					<div class="game--block"></div>
+					<div class="game--block"></div>
+					<div class="game--block"></div>
+					<div class="game--block"></div>
+					<div class="game--block"></div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+	
+		</footer>
+	</div>
+	<div class="modal hide">
+		<div class="modal__container">
+			<div class="modal__wrapper">
+				<h2 class="modal__title">Игра окончена!</h2>
+				<p class="modal__text"></p>
+			</div>
+			<span data-close class="modal__close"></span>
+		</div>
+	</div>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
